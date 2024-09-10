@@ -22,7 +22,7 @@ function Places() {
   const renderPlaces = () => {
     return places.map((place) => (
       <PlaceCard>
-        <PLaceCardLInk>
+        <PLaceCardLInk to={`/place/${place.id}`} >
           <PlaceImage src={place.image} alt="image" />
           <BottomContainer>
             <PlaceTitle>{place.name}</PlaceTitle>
