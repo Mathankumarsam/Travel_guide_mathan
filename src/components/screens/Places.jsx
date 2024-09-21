@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
-import Header from "./includes/Header";
+import Header from "../includes/Header";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -28,7 +28,7 @@ function Places() {
             <PlaceTitle>{place.name}</PlaceTitle>
             <LocationDiv>
               <LocIcon
-                src={require("../../assets/images/place.svg").default}
+                src={require("../../components/assets/images/place.svg").default}
                 alt="loc_icon"
               />
               <LocName>{place.location}</LocName>

@@ -5,7 +5,7 @@ function Header() {
   return (
     <HeaderContainer>
       <Logo
-        src={require("../../../assets/images/logo.svg").default}
+        src={require("../../components/assets/images/logo.svg").default}
         alt="Logo"
       />
       <Button>Login</Button>

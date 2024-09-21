@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Header from "./includes/Header";
+import Header from "../includes/Header";
 import { Helmet } from "react-helmet";
 import axios from "axios";
 import styled from "styled-components";
@@ -38,7 +38,7 @@ function Place() {
         <InfoContainer>
           <CategoryName>{place.category_name}</CategoryName>
           <LocationContainer>
-            <LocationIcon src={require("../../assets/images/place.svg").default} alt="loc_icon" />
+            <LocationIcon src={require("../../components/assets/images/place.svg").default} alt="loc_icon" />
             <LocationName>{place.name}</LocationName>
           </LocationContainer>
         </InfoContainer>
